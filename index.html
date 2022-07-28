@@ -10,12 +10,28 @@
     <script src="https://kit.fontawesome.com/afaf28017e.js" crossorigin="anonymous"></script>
     <!-- bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <style>
+.carousel-caption-cust {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    right: 15%;
+    top: 25%;
+    bottom: 25%;
+    left: 15%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    color: #fff;
+    text-align: center;}
+    </style>
   </head>
   <body>
     <!-- navigation -->
     <header>
-        <div class="container">
-            <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container ">
+            <nav class="navbar navbar-expand-lg bg-light fixed-top">
                 <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -24,19 +40,19 @@
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Courses</a>
+                        <a class="nav-link" href="#courses">Courses</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link">Deals</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">Success</a>
+                        <a class="nav-link" href="#success">Success</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">About</a>
+                        <a class="nav-link" href="#about">About</a>
                     </li>
                     </ul>
                     <nav class="navbar bg-light">
@@ -55,25 +71,25 @@
     </header>
     
 <!-- slider start -->
-<main>
-    <div class="container" >
+<main id="home">
+    <div class="container my-5" >
       <div id="carouselExampleCaptions" class="carousel slide"      data-bs-ride="carousel">
           <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
-        <div class="carousel-inner">
+        <div class="carousel-inner ">
           <div class="carousel-item active">
             <div class="">
             <img src="images/cover/cover-1.png" class="d-block w-100" alt="...">
-            <div class="carousel-caption-cust d-none d-md-block">
-              <h1>First slide label</h1>
-              <p>Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.Some representative placeholder content for the first slide.</p>
+            <div class="carousel-caption-cust  ">
+              <h1>Web Development Course</h1>
+              <p>Some representative placeholder content for the first slide.</p>
             
-                <form class="container-fluid justify-content-start">
-                
-                <button class="btn btn-outline-success me-2" type="button">Get Started</button>
+                <form class="container-fluid justify-content-start ">
+                  <button type="button" class="btn btn-primary">Get Started</button>
+               
                 </form>
              
               </div>
@@ -81,24 +97,24 @@
           </div>
          <div class="carousel-item">
             <img src="images/cover/cover-02.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption-cust d-none d-md-block">
-              <h1>Second slide label</h1>
+            <div class="carousel-caption-cust">
+              <h1>Basic Html and Css Course</h1>
               <p>Some representative placeholder content for the second slide.</p>
               <form class="container-fluid justify-content-start">
                 
-                <button class="btn btn-outline-success me-2" type="button">Get Started</button>
+                <button type="button" class="btn btn-primary">Get Started</button>
                 </form>
              
             </div>
           </div>
           <div class="carousel-item">
             <img src="images/cover/cover-03.jpg" class="d-block w-100" alt="...">
-            <div class="carousel-caption-cust d-none d-md-block">
-              <h1>Third slide label</h1>
+            <div class="carousel-caption-cust ">
+              <h1>Graphic Design Course</h1>
               <p>Some representative placeholder content for the third slide.</p>
               <form class="container-fluid justify-content-start">
                 
-                <button class="btn btn-outline-success me-2" type="button">Get Started</button>
+                <button type="button" class="btn btn-primary">Get Started</button>
                 </form>
              
             </div>
@@ -118,7 +134,7 @@
   </main>
   <!-- slider end -->
   <!-- popular course start -->
-  <section class="my-5">
+  <section class="my-5" id="courses">
     <div class="container">
       <div class="d-flex flex-column align-items-center">
       <h1 >Discover Our Popular 
@@ -131,9 +147,8 @@
           <div class="d-flex border rounded m-2">
             <img src="images/course/course-1.png" class="m-1" alt="">
             <div class="d-flex flex-column justify-content-center m-2">
-              <h3>Fundamental Of UI/UX Design</h3>
-              <p class="fs-5">Some quick example text to build on the card title 
-                and make up the bulk of the card.</p>
+              <h3>Php and  Java Courses</h3>
+              <p class="fs-5">Php is a skilled field in IT sectors. The diploma is designed in such a manner to offer sufficient knowledge and expertise to work on different software.</p>
                 <h5 class="text-primary" >Price : 20$</h5>
             </div>
             </div>
@@ -142,9 +157,8 @@
               <div class="d-flex border rounded m-2">
                 <img src="images/course/course-2.png" class="m-1" alt="">
                 <div class="d-flex flex-column justify-content-center m-2">
-                  <h3>Fundamental Of UI/UX Design</h3>
-                  <p class="fs-5">Some quick example text to build on the card title 
-                    and make up the bulk of the card.</p>
+                  <h3>Basic Html and Css Course</h3>
+                  <p class="fs-5"> Web Designing is a skilled field in IT sectors. The diploma is designed in such a manner to offer sufficient knowledge and expertise to work on different software.</p>
                     <h5 class="text-primary" >Price : 20$</h5>
                 </div>
               </div>
@@ -155,10 +169,9 @@
           <div class="d-flex border rounded m-2">
             <img src="images/course/course-3.png" class="m-1" alt="">
             <div class="d-flex flex-column justify-content-center m-2">
-              <h3>Fundamental Of UI/UX Design</h3>
-              <p class="fs-5">Some quick example text to build on the card title 
-                and make up the bulk of the card.</p>
-                <h5 class="text-primary" >Price : 20$</h5>
+              <h3>Javascript course</h3>
+              <p class="fs-5">Diploma in Web Designing is a 1 year long course depending on the university where candidates learn about various aspects of designing a website.</p>
+                <h5 class="text-primary" >Price : 520$</h5>
             </div>
          </div>
         </div>
@@ -168,10 +181,9 @@
           <div class="d-flex border rounded m-2">
             <img src="images/course/course-4.png" class="m-1" alt="">
             <div class="d-flex flex-column justify-content-center m-2">
-              <h3>Fundamental Of UI/UX Design</h3>
-              <p class="fs-5">Some quick example text to build on the card title 
-                and make up the bulk of the card.</p>
-                <h5 class="text-primary" >Price : 20$</h5>
+              <h3>Web Development</h3>
+              <p class="fs-5">So, does web design have a future? The answer is a big Yes! In fact, it's one of the fastest-growing digital sectors in the US and is likely to grow .</p>
+                <h5 class="text-primary" >Price : 2770$</h5>
             </div>
          </div>
         </div>
@@ -181,10 +193,9 @@
           <div class="d-flex border rounded m-2">
             <img src="images/course/course-5.png" class="m-1" alt="">
             <div class="d-flex flex-column justify-content-center m-2">
-              <h3>Fundamental Of UI/UX Design</h3>
-              <p class="fs-5">Some quick example text to build on the card title 
-                and make up the bulk of the card.</p>
-                <h5 class="text-primary" >Price : 20$</h5>
+              <h3>Graphic Design</h3>
+              <p class="fs-5">Employment of web developers and digital designers is projected to grow 13 percent from 2020 to 2030, faster than the average for all occupations.</p>
+                <h5 class="text-primary" >Price : 420$</h5>
             </div>
             </div>
           </div>
@@ -192,16 +203,15 @@
               <div class="d-flex border rounded m-2">
                 <img src="images/course/course-6.png" class="m-1" alt="">
                 <div class="d-flex flex-column justify-content-center m-2">
-                  <h3>Fundamental Of UI/UX Design</h3>
-                  <p class="fs-5">Some quick example text to build on the card title 
-                    and make up the bulk of the card.</p>
-                    <h5 class="text-primary" >Price : 20$</h5>
+                  <h3>Apps Development</h3>
+                  <p class="fs-5">Yes, Web Design is a good career. Not only are Web Designers currently in high demand by employers, the field is expected to grow by 27 percent.</p>
+                    <h5 class="text-primary" >Price : 200$</h5>
                 </div>
               </div>
             </div>
       </div>
       <div class="d-flex justify-content-center mt-3">
-        <button class="buy-now-button rounded bg-primary fs-4">See More Courses</button>
+        <button type="button" class="btn btn-primary fx-4">See More Courses</button>
       </div>
     </div>
     
@@ -209,22 +219,17 @@
   <!-- popular course end -->
   <!-- Explore start -->
   <section>
-
-    <div class="container border rounded bg-light">
-      <div class="d-flex flex-row  justify-content-center align-items-center">
-        <div class="w-50"><img src="images/cover/cover-40.jpg" class=" w-100 pe-5" alt="..."></div>
+<div class="container border rounded bg-light">
+  <div class="d-flex flex-row  justify-content-center align-items-center">
+      <div class="w-50"><img src="images/cover/cover-40.jpg" class=" w-100 pe-5" alt="..."></div>
         <div class="w-50">
         <div class=" p-3 ">
           <h1 class="my-2">Explore The elearning 
             Institute</h1>
-          <p>There are many variations of passages of Lorem Ipsum available, but the 
-            majority have suffered alteration in some form, by injected humour, or 
-            randomised words which don't look even slightly believable. If you are going 
-            to use a passage of Lorem Ipsum, you need to be sure.
+          <p>Web design and development doesn't have to be difficult, and Webflow University has made it as easy as possible to learn. Webflow's free web design training lets you go at your own pace in learning about visual design.
             
             <br>
-            Anything embarrassing hidden in the middle of text. All the Lorem Ipsum 
-            generators on the Internet tend to repeat predefined.</p>
+            Coding and design skills are more in demand today than ever before, but both learning and executing web design can be daunting for beginners, novices, and professionals alike. Some of the most common questions we hear include: what is the best framework?</p>
             <div class="d-flex justify-content-between">
           <div>
             <h1 class="price">3.2K+</h1>
@@ -240,7 +245,7 @@
           </div>
           </div>
           <div class="mt-5">
-          <button class="buy-now-button rounded bg-primary fs-4 px-3">Read More</button>
+          <button type="button" class="btn btn-primary fs-4 px-3">Read More</button>
         </div>
         </div>
         </div>
@@ -251,62 +256,67 @@
   </section>
   <!-- Explore end -->
   <section class="container mt-5">
-    <div class="d-flex p-5 align-items-center bg-primary">
+    <div class="d-flex p-5 align-items-cente  rounded" style="background: #88a4cf5b;">
     <div class="w-50 p-5">
       <h1 class="py-3">Ready to join?</h1>
       <p>t is a long established fact that a reader will be distracted by the 
         readable content of a page when looking at its layout.</p>
     </div>
     
-      <div class="d-flex justify-content-end w-50 mt-5">
-        <button class="buy-now-button rounded bg-light fs-4 px-3">Read More</button>
+      <div class="d-flex justify-content-end align-items-center w-50 mt-5">
+        
+        <div class="mb-3 w-100">
+          <label for="exampleFormControlTextarea1" class="form-label"></label>
+          <textarea class="form-control fs-2
+          " id="exampleFormControlTextarea1" rows="3" placeholder="Feedback Now"></textarea>
+        </div>
+      
+
       </div>
     </div>
   
   </section>
-  
-  <section>
+  <!-- Successfull Students -->
+  <section id="success">
     <div class="container my-5">
       <div class="w-50 pt-5">
-        <h1 class="py-3">Meet Our Successfull 
-          Students</h1>
-        <p>It is a long established fact that a reader will be distracted by the 
-          readable content of a page when looking at its layout.</p>
+        <h1 class="py-3">Meet Our Successfull Students</h1>
+        <p>Thanks a lot for this course, it's a great honour to be part of this special course. This was a very immersive and interesting course.</p>
         </div>
     <div class="row">
           <div class="col-lg-3 col-md-6 col-sm-12">
             <div class="d-flex flex-column border rounded">
            <img class="img-fluid" src="images/student/student-1.png" alt="">
-           <div>
-            <h1>fofj  oa o </h1>
-            <p>this is a footer</p>
+           <div class="ps-2"v>
+            <h1>Md Refat </h1>
+            <p>web developer</p>
            </div>
            </div>
         </div>
         <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="d-flex flex-column border rounded">
-          <img class="img-fluid" src="images/student/student-1.png" alt="">
-          <div>
-            <h1>fofj  oa o </h1>
-            <p>this is a footer</p>
+          <img class="img-fluid" src="images/student/student-2.png" alt="">
+          <div class="ps-2">
+            <h1>Mahfuza Aktar </h1>
+            <p>apps developer</p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="d-flex flex-column border rounded">
-          <img class="img-fluid" src="images/student/student-1.png" alt="">
-          <div>
-            <h1>fofj  oa o </h1>
-            <p>this is a footer</p>
+          <img class="img-fluid" src="images/student/student-3.png" alt="">
+          <div class="ps-2"s>
+            <h1>Kajul</h1>
+            <p>junior web developer/p>
           </div>
         </div>
       </div>
       <div class="col-lg-3 col-md-6 col-sm-12">
         <div class="d-flex flex-column border rounded">
-          <img class="img-fluid" src="images/student/student-1.png" alt="">
-          <div>
-            <h1>fofj  oa o </h1>
-            <p>this is a footer</p>
+          <img class="img-fluid" src="images/student/student-4.png" alt="">
+          <div class="ps-2">
+            <h1>Karina</h1>
+            <p>web developer</p>
           </div>
         </div>
       </div>
@@ -315,13 +325,13 @@
 </div>
 
   </section>
+  <!-- Students Feedback -->
   <section class="container">
-    <div>
+    <div class="d-flex flex-column align-items-center">
     <h1>Some Students Feedback</h1>
-    <p>It is a long established fact that a reader will be distracted by the readable 
-      content of a page when looking at its layout.</p>
+    <p>This course has found out passion</p>
     </div>
-    <div class="row">
+    <div class="row ">
     
               <div class="d-flex flex-row">
               <div class="p-3 w-50">
@@ -331,18 +341,16 @@
               justify-content-between my-2">
                 <img src="images/comma.png" alt="">
                 <div>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-solid text-warning fa-star"></i>
+                <i class="fa-regular text-warning fa-star"></i>
+                <span>4.1</span>
               </div>
               </div>
               <div>
-                <p>There are many variations of passages of Lorem Ipsum available, but 
-                  the majority have suffered alteration in some form, by injected 
-                  humour, or randomised words which don't look even slightly 
-                  believable. If you are going to use a passage of Lorem.</p>
+                <p>This course has found out my passion, taught me time management, taught me how to come out from procrastination, taught me teamwork, and has given me an opportunity to meet with awesome mentors and mates. I am so grateful to Programming Hero. Thanks, Programming Hero. </p>
               </div>
               <div class="d-flex align-items-center">
                 <div>
@@ -350,40 +358,40 @@
                 </div>
                 <div>
                   <span>Awlad Hossain</span><br>
-                  <span>UI Designer</span>
+                  <span>Web Designer</span>
                 </div>
                 </div>
               </div>
               </div>
               
       </div>
-      <div class="p-3 w-50">
-      <div  class="border rounded">
-        <div class="p-3 my-3">
+      <div class="p-3 w-50 ">
+        <div  class="border rounded">
+          <div class="p-3 my-3">
       <div class="d-flex
       justify-content-between my-2">
         <img src="images/comma.png" alt="">
         <div>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-solid fa-star"></i>
-        <i class="fa-regular fa-star"></i>
+        <i class="fa-solid text-warning fa-star"></i>
+        <i class="fa-solid text-warning fa-star"></i>
+        <i class="fa-solid text-warning fa-star"></i>
+        <i class="fa-solid text-warning fa-star"></i>
+        <i class="fa-solid text-warning fa-star"></i>
+        <i class="fa-regular text-warning fa-star"></i>
+        <span>4.1</span>
+        
       </div>
       </div>
       <div>
-        <p>There are many variations of passages of Lorem Ipsum available, but 
-          the majority have suffered alteration in some form, by injected 
-          humour, or randomised words which don't look even slightly 
-          believable. If you are going to use a passage of Lorem.</p>
+        <p>Fortunately, it has become a lot more affordable to purchase all of the necessary equipment and software to become a graphic designer. First of all, make sure you have a decent laptop or desktop. I recommend at least 8GB of RAM to run the latest popular design software. </p>
       </div>
       <div class="d-flex align-items-center">
         <div>
-          <img src="images/student/student-5.png" alt="">
+          <img src="images/student/student-6.png" alt="">
         </div>
         <div>
-          <span>Awlad Hossain</span><br>
-          <span>UI Designer</span>
+          <span>Shanta Akter</span><br>
+          <span>Graphic Designer</span>
         </div>
       </div>
       </div>
@@ -393,7 +401,8 @@
       
     </div>
   </section>
-  <section class="my-5"> 
+  <!-- Asked Questions -->
+  <section class="my-5" id="about"> 
     <div class="container w-75 col-md-100 col-sm-100">
      <div class="d-flex flex-column align-items-center">
      <h1>Frequently Asked Questions</h1> 
@@ -420,7 +429,7 @@
          </h2>
          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
            <div class="accordion-body">
-             <strong>Developers describe Bootstrap as "Simple and flexible HTML, CSS, and JS for popular UI components and interactions". Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. On the other hand, Tailwind CSS is detailed as "A utility-first CSS framework for rapid UI development". Tailwind is different from frameworks like Bootstrap, Foundation, or Bulma in that it's not a UI kit. It doesn't have a default theme, and there are no build-in UI components. It comes with a menu of predesigned widgets to build your site with, but doesn't impose design decisions that are difficult to undo.
+             Developers describe Bootstrap as "Simple and flexible HTML, CSS, and JS for popular UI components and interactions". Bootstrap is the most popular HTML, CSS, and JS framework for developing responsive, mobile first projects on the web. On the other hand, Tailwind CSS is detailed as "A utility-first CSS framework for rapid UI development". Tailwind is different from frameworks like Bootstrap, Foundation, or Bulma in that it's not a UI kit. It doesn't have a default theme, and there are no build-in UI components. It comes with a menu of predesigned widgets to build your site with, but doesn't impose design decisions that are difficult to undo.
            </div>
          </div>
        </div>
@@ -461,6 +470,7 @@
    
    </div>
    </section>
+   <!-- companies -->
    <section class="my-5">
     <div class="container
     d-flex flex-column align-items-center">
@@ -473,12 +483,11 @@
     <img src="images/company/company-5.png" alt="" class="m-3">
     <img src="images/company/company-6.png" alt="" class="m-3">
   </div>
-</div>
-
-  
-   </section>
+  </div>
+ </section>
+   <!-- footer -->
    <footer>
-    <div class="d-flex flex-column align-items-center text-bg-dark my-5 py-5">
+    <div class="d-flex flex-column align-items-center text-bg-dark mt-5 py-5">
     <h1>Pro Edu</h1>
     <p>Office 41, Zawaya Buildin, 
    Ghala Muscat, </p>
